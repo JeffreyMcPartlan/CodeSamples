@@ -1,5 +1,6 @@
 ﻿Write-Output "`nLoad our DLL.`n"
 [System.Reflection.Assembly]::LoadFrom("C:\Users\jeffrey.mcpartlan\Documents\Visual Studio 2017\Projects\BuzzFizz\ClassLibrary1\bin\Release\ClassLibrary1.dll")
+#Update the above path to reflect the loacation of the DLL on the system that you are executing this powershell script 
 
 Write-Output "`nExecute the static method of our class.`n"
 [ClassLibrary1.BuzzFizz]::StaticOutput(350);
